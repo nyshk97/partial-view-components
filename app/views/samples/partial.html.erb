@@ -1,2 +1,3 @@
-<h1>Samples#partial</h1>
-<p>Find me in app/views/samples/partial.html.erb</p>
+<% @samples.each do |sample| %>
+  <%= render 'hoge', hoge: sample %>
+<% end %>

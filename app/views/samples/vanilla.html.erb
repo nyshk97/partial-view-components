@@ -1,2 +1,3 @@
-<h1>Samples#vanilla</h1>
-<p>Find me in app/views/samples/vanilla.html.erb</p>
+<% @samples.each do |sample| %>
+  <p><%= sample.name %></p>
+<% end %>
